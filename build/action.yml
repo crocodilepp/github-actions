@@ -1,0 +1,10 @@
+name: 'Unity Build'
+description: 'Build Unity projects'
+inputs:
+  editorPath:
+    required: false
+    default: 'auto'
+    description: 'Path to your Unity.exe. Default is "C:/Program Files/Unity/Hub/Editor/${unity_version}/Editor/Unity.exe"'
+runs:
+  using: 'node16'
+  main: 'index.js'
