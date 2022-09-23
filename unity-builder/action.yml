@@ -1,4 +1,4 @@
-name: 'Unity Build'
+name: 'Unity Builder'
 description: 'Build Unity projects'
 inputs:
   editorPath:
