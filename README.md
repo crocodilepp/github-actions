@@ -29,3 +29,12 @@ Download file(s) from AWS S3 bucket
 ### Outputs
 - md5
   - md5 of download file
+
+***
+
+## Unity Builder
+Build Unity projects
+
+### Inputs
+- editorPath (optional)
+  - description: 'Path to your Unity.exe. Default is "C:/Program Files/Unity/Hub/Editor/${unity_version}/Editor/Unity.exe"'
