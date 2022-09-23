@@ -1,7 +1,7 @@
 {
   "name": "github-actions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Upload file or folder (will be zipped) to AWS S3 bucket",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
