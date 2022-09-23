@@ -1,0 +1,18 @@
+name: 'Upload to AWS S3'
+description: 'Upload file or folder (will be zipped) to AWS S3'
+inputs:
+  srcPath:
+    description: 'path to file(s)'
+    required: true
+  bucket:
+    description: 'AWS S3 bucket name'
+    required: true
+  filename:
+    description: 'destination filename in S3 bucket'
+    required: true
+outputs:
+  md5:
+    description: 'md5 of upload file'
+runs:
+  using: 'node16'
+  main: 'index.js'
