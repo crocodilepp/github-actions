@@ -6,7 +6,7 @@ try {
     const editorPath = core.getInput('editorPath');
     let command;
     if (editorPath === 'auto') {
-        const allFileContents = fs.readFileSync('ProjectVersion.txt', 'utf-8');
+        const allFileContents = fs.readFileSync('./ProjectSettings/ProjectVersion.txt', 'utf-8');
         const firstLine = allFileContents.split(/\r?\n/)[0];
         const version = firstLine.split(' ')[1];
         command = `"C:/Program Files/Unity/Hub/Editor/${version}/Editor/Unity.exe" -quit -batchmode -projectPath . -executeMethod Builder.Build`;
