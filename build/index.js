@@ -14,6 +14,16 @@ try {
         command = `"${editorPath}" -quit -batchmode -projectPath . -executeMethod Builder.Build`;
     }
 
+    exec.exec('mkdir ./testfolder', (error, stdout, stderr) => {
+        if (error) {
+            core.setFailed(error.message);
+        }
+        if (stderr) {
+            core.setFailed(stderr);
+        }
+        console.log(stdout);
+    }); 
+
     console.log(command);
     exec.exec(command, (error, stdout, stderr) => {
         if (error) {
